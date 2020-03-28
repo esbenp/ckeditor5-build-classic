@@ -30,6 +30,10 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
+// ADDED
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -43,6 +47,7 @@ ClassicEditor.builtinPlugins = [
 	CKFinder,
 	EasyImage,
 	Heading,
+	HorizontalLine,
 	Image,
 	ImageCaption,
 	ImageStyle,
@@ -54,6 +59,7 @@ ClassicEditor.builtinPlugins = [
 	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
+	RemoveFormat,
 	Table,
 	TableToolbar,
 	TextTransformation

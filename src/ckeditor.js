@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
 // ADDED
+import Font from '@ckeditor/ckeditor5-font/src/font';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 
@@ -46,6 +47,7 @@ ClassicEditor.builtinPlugins = [
 	BlockQuote,
 	CKFinder,
 	EasyImage,
+	Font,
 	Heading,
 	HorizontalLine,
 	Image,
@@ -70,6 +72,8 @@ ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
 			'heading',
+			'|',
+			'fontFamily',
 			'|',
 			'bold',
 			'italic',

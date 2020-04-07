@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 
 // ADDED
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
@@ -39,6 +40,7 @@ export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
+	Alignment,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -73,8 +75,10 @@ ClassicEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
-			'fontFamily',
+			'fontSize',
+			'fontColor',
 			'|',
+			'alignment',
 			'bold',
 			'italic',
 			'link',
